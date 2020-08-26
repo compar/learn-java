@@ -14,13 +14,11 @@ public class DemoStream {
 				 return b;
 
 		});
-		boolean ele = generate.anyMatch((x)-> {
+		generate.forEach((x)-> {
 			  System.out.println(x);
-			  
-			  return x==123;
 		});
 		
 		input.close();
-		System.out.println(ele);
+
 	}
 }
