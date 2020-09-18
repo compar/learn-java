@@ -17,7 +17,7 @@ import static java.util.stream.Collectors.toList;
 public final class Artist {
     
     private String name;
-    private List<Artist> members;
+    private List<Artist> members; //艺术家可能是一个人或一个乐队， 如果是乐队，这个是成员
     private String nationality;
     
     public Artist(String name, String nationality) {
