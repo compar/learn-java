@@ -1,0 +1,15 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,cn/compar/demo/String/EmptyStringEquals.equalsPost
+inline,cn/compar/demo/String/EmptyStringEquals.nonNullAndIsEmpty
+inline,cn/compar/demo/String/EmptyStringEquals.preEquals
+inline,cn/compar/demo/list/BenchMark.arrayRemove
+inline,cn/compar/demo/list/BenchMark.arrayTraverse
+inline,cn/compar/demo/list/BenchMark.init
+inline,cn/compar/demo/list/BenchMark.listTraverse
+inline,cn/compar/demo/stream07/ParallelStreamBenchmark.parallelSum
+inline,cn/compar/demo/stream07/ParallelStreamBenchmark.sequentialSum
+inline,cn/compar/demo/stream07/ParallelStreamBenchmark.tearDown
