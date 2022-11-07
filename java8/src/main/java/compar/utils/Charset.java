@@ -21,7 +21,7 @@ public class Charset{
     }
     public static void main(String[] args) {
         try {
-            Charset.recover("ܻ๶ᖫᎱ");
+            Charset.recover("ÀÏÂí");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
