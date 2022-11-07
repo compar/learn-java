@@ -19,5 +19,12 @@ public class Charset{
     }
     }
     }
+    public static void main(String[] args) {
+        try {
+            Charset.recover("ܻ๶ᖫᎱ(A)؃ᦡฎ");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
