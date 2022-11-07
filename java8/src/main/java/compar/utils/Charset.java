@@ -11,8 +11,8 @@ public class Charset{
     for(int j=0;j<charsets.length;j++){
     if(i!=j){
     String s = new String(str.getBytes(charsets[i]),charsets[j]);
-    System.out.println("---- ܻ๶ᖫᎱ(A)؃ᦡฎ: "
-    +charsets[j]+", ᤩᲙ᧏ᥴ᧛ԅԧ(B): "+charsets[i]);
+    System.out.println("---- 原来编码(A)假设是: "
+    +charsets[j]+", 被错误解读为(B): "+charsets[i]);
     System.out.println(s);
     System.out.println();
     }
@@ -21,7 +21,7 @@ public class Charset{
     }
     public static void main(String[] args) {
         try {
-            Charset.recover("ܻ๶ᖫᎱ(A)؃ᦡฎ");
+            Charset.recover("ܻ๶ᖫᎱ");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
