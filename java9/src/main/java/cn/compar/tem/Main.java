@@ -20,7 +20,7 @@ public class Main {
     //TODO ...
     private static Flow.Publisher<TempInfo> getTemperatures(String town){
         return  subscriber ->{
-            var processor = new TempProcessor();
+            TempProcessor processor = new TempProcessor();
             processor.subscribe(subscriber);
             subscriber.onSubscribe(new TempSubscription(processor,town) );
         };

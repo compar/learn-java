@@ -44,6 +44,22 @@ public class UUIDTest {
             "\nuuid6: "+uuid6 +
             "\nuuid7: "+uuid7 
         );
+        System.out.println("-------------------");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(Generators.timeBasedEpochGenerator().generate());
+            System.out.println(Generators.timeBasedEpochGenerator().generate());
+            System.out.println(Generators.timeBasedEpochGenerator().generate());
+            System.out.println(Generators.timeBasedEpochGenerator().generate());
+            System.out.println(Generators.timeBasedEpochGenerator().generate());
+            System.out.println();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
         
     }
 }
