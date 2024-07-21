@@ -1,16 +1,17 @@
 package compar.demo.mapstruct;
 
-import java.time.LocalDate;
+
 
 
 
 public class Main {
+   
     
     public static void main(String[] args) {
         VoUser vo = new VoUser();
         vo.setId(1l);
         vo.setName("zhangsnan");
-        vo.setCsrq(LocalDate.of(2001, 1, 14));
+        vo.setCsrqStr("2001-01-14");
         vo.setSex(0);
         vo.setCreateTime("2024-04-04 12:22:59");
 
@@ -26,7 +27,7 @@ public class Main {
 
         System.out.println(vo2.getId());
         System.out.println(vo2.getName());
-        System.out.println(vo2.getCsrq());
+        System.out.println(vo2.getCsrqStr());
         System.out.println(vo2.getSex());
         System.out.println(vo2.getCreateTime());
     }

@@ -1,16 +1,18 @@
 package compar.demo.mapstruct;
 
-import java.time.LocalDate;
+
 
 public class VoUser {
     private Long id;
     private String name;
     private Integer sex;
-    private LocalDate csrq;
+    private String csrqStr;
     private String createTime;
-
-    public LocalDate getCsrq() {
-        return csrq;
+    public String getCsrqStr() {
+        return csrqStr;
+    }
+    public void setCsrqStr(String csrqStr) {
+        this.csrqStr = csrqStr;
     }
     public Long getId() {
         return id;
@@ -18,9 +20,7 @@ public class VoUser {
     public String getName() {
         return name;
     }
-    public void setCsrq(LocalDate csrq) {
-        this.csrq = csrq;
-    }
+
     public void setId(Long id) {
         this.id = id;
     }
